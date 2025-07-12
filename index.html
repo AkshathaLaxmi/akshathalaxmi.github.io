@@ -1,9 +1,169 @@
-<html>
-    <head>
-        <title>@yield('title')</title>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshatha Laxmi - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     </head>
+    
     <body>
-        <div class="container">
-            <p>Hello world</p>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>Akshatha Laxmi</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm Akshatha Laxmi</h1>
+                <p class="hero-subtitle">Software Developer & Technology Enthusiast</p>
+                <p class="hero-description">I create modern web applications and love exploring new technologies.</p>
+                <a href="#contact" class="cta-button">Get In Touch</a>
+            </div>
+        </section>
+    
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm a passionate software developer with experience in building web applications. I enjoy solving
+                            complex problems and learning new technologies.</p>
+                        <p>When I'm not coding, you can find me exploring the latest tech trends, contributing to open
+                            source projects, or sharing knowledge with the developer community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>React</li>
+                            <li>Vue.js</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Python</li>
+                            <li>Express.js</li>
+                            <li>RESTful APIs</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Others</h3>
+                        <ul>
+                            <li>Git & GitHub</li>
+                            <li>Docker</li>
+                            <li>MySQL/PostgreSQL</li>
+                            <li>AWS/Cloud Services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Project One</h3>
+                        <p>A web application built with modern technologies. Features include user authentication,
+                            responsive design, and real-time updates.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project Two</h3>
+                        <p>An innovative solution for data visualization with interactive charts and real-time analytics
+                            dashboard.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Python</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project Three</h3>
+                        <p>A mobile-first web application with offline capabilities and progressive web app features.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Service Workers</span>
+                            <span>IndexedDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </section>
+                
+                <section id="contact" class="contact">
+                    <div class="container">
+                        <h2>Get In Touch</h2>
+                        <p>I'm always open to discussing new opportunities and interesting projects.</p>
+                        <div class="contact-links">
+                            <a href="mailto:your.email@example.com" class="contact-link">
+                                <span>Email</span>
+                            </a>
+                            <a href="https://github.com/akshathalaxmi" target="_blank" class="contact-link">
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-link">
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://twitter.com/yourhandle" target="_blank" class="contact-link">
+                                <span>Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                </main>
+                
+                <footer class="footer">
+                    <div class="container">
+                        <p>&copy; 2024 Akshatha Laxmi. All rights reserved.</p>
         </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    </body>
 </html>
