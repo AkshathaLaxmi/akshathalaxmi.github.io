@@ -6,16 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akshatha Laxmi - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Mako&display=swap"
+        rel="stylesheet">
     </head>
     
     <body>
     <header class="header">
         <nav class="nav">
-            <div class="nav-brand">
-                <h2>Akshatha Laxmi</h2>
+            <div class="cormorand nav-brand">
+                <h1>Akshatha Laxmi</h1>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#about" class="nav-link">About</a></li>
+            <ul class="nav-menu crimson-italic">
+                <li><a href="#statement" class="nav-link">Statement</a></li>
+                <li><a href="#current" class="nav-link">Current</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -29,12 +35,67 @@
     </header>
     
     <main>
-        <section id="hero" class="hero">
-            <div class="hero-content">
-                <h1>Hi, I'm Akshatha Laxmi</h1>
-                <p class="hero-subtitle">Software Developer & Technology Enthusiast</p>
-                <p class="hero-description">I create modern web applications and love exploring new technologies.</p>
-                <a href="#contact" class="cta-button">Get In Touch</a>
+        <!-- Personal Statement Section -->
+        <section id="statement" class="personal-statement">
+            <div class="container">
+                <div class="statement-content">
+                    <h1 class="statement-title cormorand">Who am I?</h1>
+                    <p class="statement-text">Engineer who loves to make things, break them and then fix them.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Current Status Section -->
+        <section id="current" class="current-status">
+            <div class="container">
+                <h2>What I'm Working On</h2>
+                <div class="status-grid">
+                    <div class="status-item">
+                        <h3>🚀 Current Project</h3>
+                        <p>Building a full-stack e-commerce platform with React and Node.js, focusing on performance
+                            optimization and user experience.</p>
+                        <span class="status-label">In Development</span>
+                    </div>
+                    <div class="status-item">
+                        <h3>📚 Learning</h3>
+                        <p>Diving deep into cloud architecture with AWS and exploring machine learning applications in web
+                            development.</p>
+                        <span class="status-label">Ongoing</span>
+                    </div>
+                    <div class="status-item">
+                        <h3>🤝 Open To</h3>
+                        <p>Collaborating on open source projects, mentoring junior developers, and discussing innovative tech
+                            solutions.</p>
+                        <span class="status-label">Available</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Philosophy/Manifesto Section -->
+        <section id="philosophy" class="philosophy">
+            <div class="container">
+                <div class="philosophy-content">
+                    <blockquote class="manifesto">
+                        <p>"Code is not just instructions for computers—it's a language for expressing ideas, solving problems,
+                            and creating possibilities that didn't exist before."</p>
+                        <cite>— My Development Philosophy</cite>
+                    </blockquote>
+                    <div class="principles">
+                        <div class="principle">
+                            <strong>Clean Code</strong>
+                            <span>Write code that humans can read and maintain</span>
+                        </div>
+                        <div class="principle">
+                            <strong>User-Centered</strong>
+                            <span>Every decision should benefit the end user</span>
+                        </div>
+                        <div class="principle">
+                            <strong>Continuous Learning</strong>
+                            <span>Technology evolves; so should we</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     
@@ -92,44 +153,42 @@
                 <h2>Projects</h2>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <h3>Project One</h3>
-                        <p>A web application built with modern technologies. Features include user authentication,
-                            responsive design, and real-time updates.</p>
+                        <h3>Enterprise Cloud Migration</h3>
+                        <p>Led migration of 200+ repositories to GitHub and consolidated 40+ microservices. Implemented AI-driven automation for infrastructure refactoring and database modernization.</p>
                         <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <h3>Project Two</h3>
-                        <p>An innovative solution for data visualization with interactive charts and real-time analytics
-                            dashboard.</p>
-                        <div class="project-tech">
-                            <span>Vue.js</span>
-                            <span>Python</span>
+                            <span>AWS CDK</span>
+                            <span>Java</span>
+                            <span>Golang</span>
                             <span>PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
+                            <span>AI Tools</span>
                         </div>
                     </div>
                     <div class="project-card">
-                        <h3>Project Three</h3>
-                        <p>A mobile-first web application with offline capabilities and progressive web app features.</p>
+                        <h3>Animal Welfare Data Platform</h3>
+                        <p>Spearheaded a real-time data platform providing industry insights. Built robust APIs and serverless infrastructure for processing application requests.</p>
                         <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>Service Workers</span>
-                            <span>IndexedDB</span>
+                            <span>Node.js</span>
+                            <span>TypeScript</span>
+                            <span>AWS AppSync</span>
+                            <span>DynamoDB</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Healthcare Data Transmission</h3>
+                        <p>Implemented an expedited solution for transmitting critical patient information using the HL7 protocol, improving data communication efficiency and accuracy.</p>
+                        <div class="project-tech">
+                            <span>HL7 Protocol</span>
+                            <span>Backend Dev</span>
+                            <span>Data Integration</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Resilient Data Replication</h3>
+                        <p>Engineered a robust system to replicate data between disconnected systems, ensuring data integrity and continuity during prolonged outages.</p>
+                        <div class="project-tech">
+                            <span>Backend Engineering</span>
+                            <span>System Architecture</span>
+                            <span>Data Replication</span>
                         </div>
                     </div>
                 </div>
@@ -141,16 +200,16 @@
                         <h2>Get In Touch</h2>
                         <p>I'm always open to discussing new opportunities and interesting projects.</p>
                         <div class="contact-links">
-                            <a href="mailto:your.email@example.com" class="contact-link">
+                            <a href="mailto:akshatha.laxmi@gmail.com" class="contact-link">
                                 <span>Email</span>
                             </a>
                             <a href="https://github.com/akshathalaxmi" target="_blank" class="contact-link">
                                 <span>GitHub</span>
                             </a>
-                            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-link">
+                            <a href="www.linkedin.com/in/akshatha-laxmi" target="_blank" class="contact-link">
                                 <span>LinkedIn</span>
                             </a>
-                            <a href="https://twitter.com/yourhandle" target="_blank" class="contact-link">
+                            <a href="https://x.com/612Aksh" target="_blank" class="contact-link">
                                 <span>Twitter</span>
                             </a>
                         </div>

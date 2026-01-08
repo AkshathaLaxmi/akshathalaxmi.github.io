@@ -9,8 +9,23 @@ html {
     scroll-behavior: smooth;
 }
 
+.cormorand {
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.crimson-italic {
+    font-family: "Crimson Text", serif;
+    font-weight: 800;
+    font-style: italic;
+}
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Mako", sans-serif;
+        font-weight: 400;
+        font-style: normal;
     line-height: 1.6;
     color: #333;
     background-color: #fff;
@@ -28,7 +43,6 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
@@ -43,15 +57,16 @@ body {
     margin: 0 auto;
 }
 
-.nav-brand h2 {
-    color: #2563eb;
-    font-size: 1.5rem;
+.nav-brand h1 {
+    color: #b4107a;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
+    font-size: 1.25rem;
     gap: 2rem;
 }
 
@@ -96,59 +111,161 @@ body {
     transition: 0.3s;
 }
 
-/* Hero Section */
-.hero {
-    min-height: 100vh;
+/* Personal Statement Section */
+.personal-statement {
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        padding: 100px 20px 80px;
+    }
+    
+    .statement-content {
     text-align: center;
-    padding: 0 20px;
+    max-width: 800px;
+        margin: 0 auto;
 }
 
-.hero-content h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+.statement-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #1e293b;
+    margin-bottom: 2rem;
+    line-height: 1.2;
     animation: fadeInUp 1s ease;
 }
 
-.hero-subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    opacity: 0.9;
+.statement-text {
+    font-size: 1.4rem;
+    color: #475569;
+    line-height: 1.8;
+    margin-bottom: 2rem;
     animation: fadeInUp 1s ease 0.2s both;
 }
 
-.hero-description {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    opacity: 0.8;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+.statement-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
     animation: fadeInUp 1s ease 0.4s both;
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 12px 30px;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    text-decoration: none;
-    border-radius: 50px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    animation: fadeInUp 1s ease 0.6s both;
+.statement-meta span {
+    font-size: 1.1rem;
+    color: #64748b;
+        padding: 0.5rem 1rem;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 25px;
+        border: 1px solid #e2e8f0;
+    }
+    
+    /* Current Status Section */
+    .current-status {
+        padding: 80px 0;
+        background: white;
+    }
+    
+    .status-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .status-item {
+        padding: 2rem;
+        background: #f8fafc;
+        border-radius: 15px;
+        border-left: 4px solid #b4107a;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .status-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .status-item h3 {
+        color: #1e293b;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+    
+    .status-item p {
+        color: #64748b;
+        line-height: 1.6;
+        margin-bottom: 1rem;
 }
 
-.cta-button:hover {
-    background: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+.status-label {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+        background: #b4107a;
+        color: white;
+        border-radius: 15px;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    
+    /* Philosophy Section */
+    .philosophy {
+        padding: 80px 0;
+        background: #1e293b;
+    color: white;
+}
+
+.philosophy-content {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.manifesto {
+    margin-bottom: 3rem;
+}
+
+.manifesto p {
+    font-size: 1.8rem;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #f1f5f9;
+}
+
+.manifesto cite {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    font-style: normal;
+}
+
+.principles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.principle {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.principle strong {
+    color: #b4107a;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.principle span {
+    color: #cbd5e1;
+    font-size: 0.95rem;
 }
 
 /* Sections */
@@ -407,14 +524,28 @@ section h2::after {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .hero-content h1 {
+                                                                .statement-title {
         font-size: 2.5rem;
     }
 
-    .hero-subtitle {
+                                                                .statement-text {
         font-size: 1.2rem;
     }
 
+                                                                .statement-meta {
+                                                                    flex-direction: column;
+                                                                    align-items: center;
+                                                                    gap: 1rem;
+                                                                }
+                                
+                                                                .manifesto p {
+                                                                    font-size: 1.4rem;
+                                                                }
+                                
+                                                                .status-grid,
+                                                                .principles {
+                                                                    grid-template-columns: 1fr;
+                                                                }
     section {
         padding: 60px 0;
     }
@@ -444,20 +575,25 @@ section h2::after {
         padding: 1rem;
     }
 
-    .hero-content h1 {
+                                                                .statement-title {
         font-size: 2rem;
     }
 
-    .hero-subtitle {
+                                                                .statement-text {
         font-size: 1.1rem;
     }
 
+                                                                .manifesto p {
+                                                                    font-size: 1.2rem;
+                                                                }
     .container {
         padding: 0 15px;
     }
 
     .skill-category,
-    .project-card {
+                                                                .project-card,
+                                                                .status-item,
+                                                                .principle {
         padding: 1.5rem;
     }
 }
