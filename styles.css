@@ -427,6 +427,59 @@ section h2::after {
     background: #1d4ed8;
 }
 
+/* Certifications Section */
+.certifications {
+    background: white;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.certification-card {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border-left: 4px solid #b4107a;
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+}
+
+.certification-card h3 {
+    color: #1e293b;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.certification-card p {
+    color: #64748b;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.cert-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #b4107a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.cert-link:hover {
+    background: #9d0e6a;
+}
+
 /* Contact Section */
 .contact {
     text-align: center;
@@ -555,7 +608,8 @@ section h2::after {
     }
 
     .skills-grid,
-    .projects-grid {
+    .projects-grid,
+    .certifications-grid {
         grid-template-columns: 1fr;
     }
 
@@ -593,7 +647,8 @@ section h2::after {
     .skill-category,
                                                                 .project-card,
                                                                 .status-item,
-                                                                .principle {
+                                                                .principle,
+                                                                .certification-card {
         padding: 1.5rem;
     }
 }
